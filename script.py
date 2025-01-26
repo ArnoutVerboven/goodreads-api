@@ -142,7 +142,7 @@ if __name__ == "__main__":
     reading_tracker = ReadingTracker(db, db_event)
     print(reading_tracker)
     
-    goodreads_books = extract_books_progress()
+    goodreads_books = extract_books_progress(GOODREADS_ID)
     print(goodreads_books)
     
     reading_tracker.update(goodreads_books)
