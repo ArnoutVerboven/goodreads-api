@@ -25,10 +25,8 @@ def extract_books_progress(goodreads_id: str) -> list[dict]:
     }
     
     url = f"https://www.goodreads.com/user/show/{goodreads_id}"
-    print(url)
 
     response = requests.get(url, headers=headers)
-    print(response)
     
     if response.status_code != 200:
         raise RuntimeError(f"Goodreads API request failed with status code {response.status_code}.")

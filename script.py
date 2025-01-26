@@ -135,6 +135,10 @@ if __name__ == "__main__":
     
     GOODREADS_ID = os.environ.get("GOODREADS_ID")
 
+    print(f"NOTION_DB_ID: {NOTION_DB_ID}")
+    print(f"NOTION_DB_EVENT_ID: {NOTION_DB_EVENT_ID}")
+    print(f"GOODREADS_ID: {GOODREADS_ID}")
+
     notion_api = NotionAPI(NOTION_API_KEY)
     db = NotionDB(notion_api, NOTION_DB_ID)
     db_event = NotionDB(notion_api, NOTION_DB_EVENT_ID)
