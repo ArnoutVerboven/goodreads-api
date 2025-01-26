@@ -128,8 +128,6 @@ class ReadingTracker:
                 self.create_event_db(book["Book Title"], pages_read, book_finished=True)
 
 
-
-
 if __name__ == "__main__":
     NOTION_API_KEY = os.environ.get("NOTION_API_KEY")
     NOTION_DB_ID = os.environ.get("NOTION_DB_ID")

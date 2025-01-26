@@ -1,4 +1,4 @@
-name: Run Python Script Weekly
+name: Update Notion Reading Tracker From Goodreads
 
 on:
   schedule:
